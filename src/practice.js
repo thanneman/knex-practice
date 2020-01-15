@@ -6,8 +6,6 @@ const knexInstance = knex({
     connection: process.env.DB_URL
 })
 
-const searchTerm = 'holo'
-
 // Searching Amazong products
 function searchByProduceName(searchTerm) {
     knexInstance
